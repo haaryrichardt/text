@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: AccountService
+spec:
+   containers:
+   - name: AccountService
+     image: my_accounts_service:latest
+     ports:
+     - containerPort: 8081
