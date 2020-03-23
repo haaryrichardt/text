@@ -5,6 +5,6 @@ metadata:
 spec:
    containers:
    - name: accountservice
-     image: accountsservice:latest
+     image: d084be4736a6:latest
      ports:
      - containerPort: 3001
