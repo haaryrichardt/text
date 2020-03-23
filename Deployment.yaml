@@ -7,4 +7,4 @@ spec:
    - name: accountservice
      image: accountsservice:latest
      ports:
-     - containerPort: 8081
+     - containerPort: 3001
