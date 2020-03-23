@@ -1,0 +1,18 @@
+CONTAINER ID        IMAGE                    COMMAND                  CREATED             STATUS              PORTS               NAMES
+e5d03bf238cb        70f311871ae1             "/coredns -conf /etc…"   17 minutes ago      Up 17 minutes                           k8s_coredns_coredns-6955765f44-4brwc_kube-system_13dccd20-d19d-4063-86cc-79f22bb6d605_0
+688ac4c9bda2        70f311871ae1             "/coredns -conf /etc…"   17 minutes ago      Up 17 minutes                           k8s_coredns_coredns-6955765f44-7j62j_kube-system_9b552f98-7ab2-42bc-9940-699d68657a4a_0
+32204be37f3a        k8s.gcr.io/pause:3.1     "/pause"                 17 minutes ago      Up 17 minutes                           k8s_POD_coredns-6955765f44-7j62j_kube-system_9b552f98-7ab2-42bc-9940-699d68657a4a_0
+44a730ec75bc        k8s.gcr.io/pause:3.1     "/pause"                 17 minutes ago      Up 17 minutes                           k8s_POD_coredns-6955765f44-4brwc_kube-system_13dccd20-d19d-4063-86cc-79f22bb6d605_0
+410fe8418126        accountsservice:latest   "docker-entrypoint.s…"   30 minutes ago      Up 30 minutes       3001/tcp            my_accounts_service
+82d3287a752c        4e9f801d2217             "/opt/bin/flanneld -…"   About an hour ago   Up About an hour                        k8s_kube-flannel_kube-flannel-ds-amd64-5shqc_kube-system_00581916-dac6-4eeb-8c1c-b117d0610eea_0
+29cc6fe22924        k8s.gcr.io/pause:3.1     "/pause"                 About an hour ago   Up About an hour                        k8s_POD_kube-flannel-ds-amd64-5shqc_kube-system_00581916-dac6-4eeb-8c1c-b117d0610eea_0
+d24a680dc7e2        6dec7cfde1e5             "/usr/local/bin/kube…"   2 hours ago         Up 2 hours                              k8s_kube-proxy_kube-proxy-xbhxk_kube-system_e23aab30-298b-4a08-b50e-52297b250b19_0
+51d892424138        k8s.gcr.io/pause:3.1     "/pause"                 2 hours ago         Up 2 hours                              k8s_POD_kube-proxy-xbhxk_kube-system_e23aab30-298b-4a08-b50e-52297b250b19_0
+390963abf059        2e1ba57fe95a             "kube-apiserver --ad…"   2 hours ago         Up 2 hours                              k8s_kube-apiserver_kube-apiserver-master-node_kube-system_a4cfdfbf20b5eb5a19767610bc73af7b_0
+8556e44360f4        303ce5db0e90             "etcd --advertise-cl…"   2 hours ago         Up 2 hours                              k8s_etcd_etcd-master-node_kube-system_3d3916960a0fc6622e8afec08e8d54cb_0
+d8dbafd10f5f        7f997fcf3e94             "kube-controller-man…"   2 hours ago         Up 2 hours                              k8s_kube-controller-manager_kube-controller-manager-master-node_kube-system_12035ac05a9af3391bcec55ce60f3800_0
+2c93096e12a0        5db16c1c7aff             "kube-scheduler --au…"   2 hours ago         Up 2 hours                              k8s_kube-scheduler_kube-scheduler-master-node_kube-system_d4d13becd444ee4a984c5c68b2a69ffd_0
+a98d3777e68e        k8s.gcr.io/pause:3.1     "/pause"                 2 hours ago         Up 2 hours                              k8s_POD_kube-scheduler-master-node_kube-system_d4d13becd444ee4a984c5c68b2a69ffd_0
+8275555b7a8e        k8s.gcr.io/pause:3.1     "/pause"                 2 hours ago         Up 2 hours                              k8s_POD_kube-controller-manager-master-node_kube-system_12035ac05a9af3391bcec55ce60f3800_0
+c511dd648d68        k8s.gcr.io/pause:3.1     "/pause"                 2 hours ago         Up 2 hours                              k8s_POD_kube-apiserver-master-node_kube-system_a4cfdfbf20b5eb5a19767610bc73af7b_0
+f9520589674a        k8s.gcr.io/pause:3.1     "/pause"                 2 hours ago         Up 2 hours                              k8s_POD_etcd-master-node_kube-system_3d3916960a0fc6622e8afec08e8d54cb_0
