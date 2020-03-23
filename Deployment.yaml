@@ -5,6 +5,6 @@ metadata:
 spec:
    containers:
    - name: accountservice
-     image: my_accounts_service:latest
+     image: accountsservice:latest
      ports:
      - containerPort: 8081
