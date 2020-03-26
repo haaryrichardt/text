@@ -8,7 +8,7 @@ pipeline
      {
             steps
             {
-                sh ‘echo “haaryrix/accountsservices:latest” > anchore_images’
+                sh ‘echo “docker.io/haaryrix/accountsservices:latest” > anchore_images’
                 anchore bailOnFail: false, bailOnPluginFail: false, name: 'anchore_images'
             }
       }
