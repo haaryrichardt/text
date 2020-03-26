@@ -8,7 +8,8 @@ pipeline
      {
             steps
             {
-                sh "mvn clean package"
+                writeFile file: anchorefile, text: 'haaryrix/accountsservices:latest'
+                anchore bailOnFail: false, bailOnPluginFail: false, name: 'anchore_images'
             }
       }
      }
