@@ -16,8 +16,7 @@ pipeline
                     {
                     def imageLine = 'haaryrix/accountsservices:latest'
                     writeFile file: 'anchore_images', text: imageLine
-                    anchore name: 'anchore_images'
-                    bailOnFail: false
+                    anchore bailOnFail: false, bailOnPluginFail: false, name: 'anchore_images'
                     }
                 }
             }
