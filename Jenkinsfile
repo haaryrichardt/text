@@ -8,7 +8,7 @@ pipeline
      {
             steps
             {
-                writeFile file: anchorefile, text: 'haaryrix/accountsservices:latest'
+                sh ‘echo “haaryrix/accountsservices:latest” > anchore_images’
                 anchore bailOnFail: false, bailOnPluginFail: false, name: 'anchore_images'
             }
       }
