@@ -26,7 +26,7 @@ pipeline
             {
                 sshagent(['Master']) 
                 {
-                    sh "ssh-o StrictHostKeyChecking=no root@104.248.54.135 kubectl version"
+                    sh "ssh -o StrictHostKeyChecking=no root@104.248.54.135 kubectl version"
                 }
             }
         }
