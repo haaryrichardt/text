@@ -4,8 +4,8 @@ pipeline
     tools { maven "maven" }
     stages
     {
-     stage ('Build and Package')
-     {
+        stage ('Image Scanning')
+        {
             steps
             {
                 /*sh ‘echo “docker.io/haaryrix/accountsservices:latest” > anchore_images’
@@ -21,5 +21,15 @@ pipeline
                 }
             }
       }
+        stage ('Deployment')
+        {
+            steps
+            {
+                sshagent(['Master']) 
+                {
+                sh 'cd /root/text'
+                }
+            }
+        }
      }
 }
