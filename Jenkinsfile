@@ -27,6 +27,7 @@ pipeline
                 sshagent(['Master']) 
                 {
                     sh "sshpass -p 'thegreat' ssh root@104.248.54.135 kubectl create -f /root/text/Deployment.yaml"
+                    sh "sshpass -p 'thegreat' ssh root@104.248.54.135 kubectl create -f /root/text/Service.yaml"
                 }
             }
         }
