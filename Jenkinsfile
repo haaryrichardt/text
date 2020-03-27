@@ -26,7 +26,7 @@ pipeline
             {
                 sshagent(['Master']) 
                 {
-                    sh "ssh-copy-id 104.248.54.135"
+                    sh "sshpass -p 'thegreat' ssh root@104.248.54.135 kubectl version"
                 }
             }
         }
