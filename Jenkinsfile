@@ -27,7 +27,7 @@ pipeline
             {
                 sshagent(['Master']) 
                 {
-                sh 'cd /home/user/'
+                sh 'echo "hey"'
                 }
             }
         }
