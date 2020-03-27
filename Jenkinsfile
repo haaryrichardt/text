@@ -27,7 +27,7 @@ pipeline
             {
                 sshagent(['Master']) 
                 {
-                sh "cd /home/user/"
+                sh "scp -o StrictHostKeyChecking=no Service.yaml Deployment.yaml root@104.248.54.135:/home/user/"
                 }
             }
         }
