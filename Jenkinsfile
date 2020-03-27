@@ -26,7 +26,7 @@ pipeline
             {
                 sshagent(['Master']) 
                 {
-                    sh "kubectl version"
+                    sh "ssh root@104.248.54.135 kubectl version"
                 }
             }
         }
