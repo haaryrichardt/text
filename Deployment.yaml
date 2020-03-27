@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: accountservice
+spec:
+   containers:
+   - name: accountservice
+     image: haaryrix/accountsservices:latest
+     ports:
+     - containerPort: 3001
