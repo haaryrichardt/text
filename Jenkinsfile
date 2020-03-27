@@ -4,7 +4,7 @@ pipeline
     tools { maven "maven" }
     stages
     {
-        stage ('Image Scanning')
+        /*stage ('Image Scanning')
         {
             steps
             {
@@ -20,14 +20,14 @@ pipeline
                     }
                 }
             }
-      }
+        }*/
         stage ('Deployment')
         {
             steps
             {
                 sshagent(['Master']) 
                 {
-                sh 'cd /root/text'
+                sh 'cd /home/user/'
                 }
             }
         }
