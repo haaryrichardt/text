@@ -1,0 +1,1 @@
+kubeadm join 45.79.123.40:6443 --token aifm0c.1vmkuoqozwreor99     --discovery-token-ca-cert-hash sha256:104c92732b8dbf49eb54f6683bf9058fd467d6df380b68391a7fa3ffb324d462 
