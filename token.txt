@@ -1,1 +1,0 @@
-kubeadm join 104.248.54.135:6443 --token hn8j97.swpjjo06bdqe4igw     --discovery-token-ca-cert-hash sha256:ed5599b4e9ec08b2c73e2980ec5c5d8daa508dc14fcb01cb7c39c25d73d0bb3c 
