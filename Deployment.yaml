@@ -16,5 +16,5 @@ spec:
       - name: crudapp
         image: haaryrix/training:latest
         ports:
-         - containerPort: 3001
-           hostPort: 3001
+         - containerPort: 3000
+           hostPort: 3000
