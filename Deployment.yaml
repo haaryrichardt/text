@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-   name: accountservice
+   name: crudapp
 spec:
    containers:
-   - name: accountservice
-     image: haaryrix/accountsservices:latest
+   - name: crudapp
+     image: haaryrix/training:latest
      ports:
      - containerPort: 3001
+     - hostPort: 3001
