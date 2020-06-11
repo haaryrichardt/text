@@ -8,4 +8,4 @@ spec:
      image: haaryrix/training:latest
      ports:
      - containerPort: 3001
-     - hostPort: 3001
+       hostPort: 3001
